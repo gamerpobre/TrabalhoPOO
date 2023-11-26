@@ -1,0 +1,10 @@
+Jaquim;12345678910;Rua Silva 1230;São Paulo;55999901921;zequinha@gmail.com;;Cauzzo;Masculino
+Maria;98765432109;Avenida Flores 567;Rio de Janeiro;55123456789;maria@gmail.com;Unimed;Feminino
+Carlos;65432109876;Rua do Comércio 890;Belo Horizonte;55887766554;carlos@hotmail.com;Amil;Masculino
+Ana;10987654321;Avenida Central 432;Brasília;55443322110;ana@yahoo.com;Bradesco;Feminino
+João;56789012345;Rua das Palmeiras 765;Porto Alegre;55667788990;joao@outlook.com;SulAmérica;Masculino
+Fernanda;23456789012;Travessa do Bosque 987;Curitiba;55332211000;fernanda@gmail.com;Uniprev;Feminino
+Ricardo;87654321098;Alameda dos Girassóis 654;Salvador;55998877665;ricardo@hotmail.com;;Masculino
+Luísa;34567890123;Avenida dos Ipês 321;Fortaleza;55112233445;luisa@yahoo.com;Amil;Feminino
+Pedro;21098765432;Rua das Acácias 876;Recife;55880011222;pedro@outlook.com;Bradesco;Masculino
+Mariana;98765432101;Praça da Liberdade 543;Porto Velho;55443322110;mariana@gmail.com;Unimed;Feminino

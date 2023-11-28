@@ -73,9 +73,15 @@ public class gerenciarUsuarios extends JFrame {
 
         JList<paciente> list_pacientes = new JList<>(pacienteListModel);
         scrollPanePacientes.setViewportView(list_pacientes);
-
+        
+        JButton btnNewButton = new JButton("Voltar");
+        btnNewButton.setBounds(335, 11, 89, 23);
+        contentPane.add(btnNewButton);
+        btnNewButton.addActionListener(e -> {
+        	setVisible(false);
+        	Principal.main(null);
+        });
         btncadastrarpaciente.addActionListener(e -> {
-            // Adicione a lógica para o cadastro de paciente
         	
         	
         	cadastroPaciente janelaPaciente = new cadastroPaciente();

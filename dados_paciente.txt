@@ -8,3 +8,4 @@ Ricardo;87654321098;Alameda dos Girassóis 654;Salvador;55998877665;ricardo@hotm
 Luísa;34567890123;Avenida dos Ipês 321;Fortaleza;55112233445;luisa@yahoo.com;Amil;Feminino
 Pedro;21098765432;Rua das Acácias 876;Recife;55880011222;pedro@outlook.com;Bradesco;Masculino
 Mariana;98765432101;Praça da Liberdade 543;Porto Velho;55443322110;mariana@gmail.com;Unimed;Feminino
+Osmar;12345678911;Santa Maria;Rua A 123;77984539293;hfiuhqa@gmail.com;SUS;Masculino

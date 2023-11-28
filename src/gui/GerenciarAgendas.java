@@ -75,24 +75,17 @@ public class GerenciarAgendas extends JDialog {
         btnVoltar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Lógica para ação do botão "Voltar"
-                dispose(); // Fecha a janela atual
+            	setVisible(false);
+
+                // Show the main frame
+            	Principal.main(null);
             }
         });
         btnVoltar.setActionCommand("OK");
         btnVoltar.setBounds(10, 194, 89, 23);
         contentPanel.add(btnVoltar);
 
-        {
-            JPanel buttonPane = new JPanel();
-            buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
-            getContentPane().add(buttonPane, BorderLayout.SOUTH);
-
-            JButton okButton = new JButton("OK");
-            okButton.setActionCommand("OK");
-            buttonPane.add(okButton);
-            getRootPane().setDefaultButton(okButton);
-        }
+        
     }
 
     private void atualizarListaConsultas() {

@@ -52,10 +52,8 @@ public class Agenda {
     public static List<Agenda> getListaAgenda() {
         return listaAgenda;
     }
-	@Override
+    @Override
 	public String toString() {
-		return "Agenda [horario=" + horario + ", medicoSelecionado=" + medicoSelecionado + ", pacienteSelecionado="
-				+ pacienteSelecionado + "]";
+		return  medicoSelecionado +"<>" +  horario +"<>" + pacienteSelecionado;
 	}
-    
 }

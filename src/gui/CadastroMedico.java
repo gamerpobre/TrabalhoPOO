@@ -146,7 +146,13 @@ public class CadastroMedico extends JFrame {
 		
 		btncadastrar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+            	
             	cadastrarMedico();
+            	setVisible(false);
+
+	                // Show the main frame
+            	Principal.main(null);
+            	
                 
             }
 	
@@ -158,7 +164,8 @@ public class CadastroMedico extends JFrame {
 	                setVisible(false);
 
 	                // Show the main frame
-	                main.main(null);
+	                Principal.main(null);
+	                dispose();
 	            }
 	        });
 	}

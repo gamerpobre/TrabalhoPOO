@@ -152,7 +152,8 @@ public class cadastroPaciente extends JFrame {
 	                setVisible(false);
 
 	                // Show the main frame
-	                main.main(null);
+	                Principal.main(null);
+	                dispose();
 	            }
 	        });
 	
@@ -164,7 +165,8 @@ public class cadastroPaciente extends JFrame {
             	  setVisible(false);
 
 	                // Show the main frame
-	                main.main(null);
+            	  Principal.main(null);
+            	  
             }
 	
         });

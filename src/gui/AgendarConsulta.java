@@ -50,11 +50,11 @@ public class AgendarConsulta extends JDialog {
         contentPanel.setLayout(null);
 
         Label label_1 = new Label("Paciente");
-        label_1.setBounds(341, 30, 62, 22);
+        label_1.setBounds(25, 30, 62, 22);
         contentPanel.add(label_1);
 
         Label label_2 = new Label("Medico");
-        label_2.setBounds(26, 30, 62, 22);
+        label_2.setBounds(331, 30, 62, 22);
         contentPanel.add(label_2);
 
         // Adiciona JScrollPane para list_medicos
@@ -124,8 +124,11 @@ public class AgendarConsulta extends JDialog {
             JButton voltarButton = new JButton("Voltar");
             voltarButton.addActionListener(e -> {
                 // Cria e exibe a janela da classe cadastroPaciente
-            	GerenciarAgendas janelaAgenda = new GerenciarAgendas();
-            	janelaAgenda.setVisible(true);
+            	
+            	setVisible(false);
+
+                // Show the main frame
+            	Principal.main(null);
             });
             buttonPane.add(voltarButton);
         }

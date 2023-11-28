@@ -49,7 +49,7 @@ public class main {
         frame.getContentPane().add(lblNewLabel);
         btnAgenda.addActionListener(e -> {
             // Cria e exibe a janela da classe cadastroPaciente
-        	Agenda janelaAgenda = new Agenda();
+        	GerenciarAgendas janelaAgenda = new GerenciarAgendas();
         	janelaAgenda.setVisible(true);
         });
         // Adiciona um ActionListener ao botão "Cadastrar Usuario"

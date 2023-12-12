@@ -14,7 +14,7 @@ public class medico extends pessoa {
 		super(nome, cpf, endereco, cidade, telefone, email, genero);
         this.CRM = CRM;
     	if (cpfJaExiste(cpf)) {
-              System.out.println("Usuário já existe.");
+            
              
           }
     	else {
@@ -58,19 +58,22 @@ public class medico extends pessoa {
         for (medico medico : listaMedicos) {
             if (medico.getCpf().equals(cpf)) {
                 
-            	System.out.println("CPF já existe");
+            
             	return true; // CPF já existe
             }
         }
-        System.out.println("CPF não existe");
+      
         return false; // CPF não existe
     }
     
     
     
-    public void atualizar(String endereco, String telefone, String email) {
-        super.atualizar(endereco, telefone, email);
-        System.out.println("Médico atualizado: " + nome);
+    public void atualizar(String nome, String cidade,String endereco, String telefone) {
+		this.setNome(nome);
+    	this.setCidade(cidade);
+    	this.setEndereco(endereco);
+    	this.setTelefone(telefone);
+    	
     }
     public boolean isAtivo() {
         return super.ativo;
@@ -80,14 +83,62 @@ public class medico extends pessoa {
     // Método para carregar dados de um arquivo
   
     
-    public String getCpf() {
-    	
-    	return cpf;
-    	
-    }
+    
     @Override
     public String toString() {
         return super.toString();
     }
-   
+    public String getNome() {
+		return nome;
+	}
+
+
+
+
+	public String getEndereco() {
+		return endereco;
+	}
+
+
+
+
+	public String getCpf() {
+		return cpf;
+	}
+
+
+
+
+	public String getCidade() {
+		return cidade;
+	}
+
+
+
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+
+
+
+	public String getEmail() {
+		return email;
+	}
+
+
+	public String getCRM() {
+		return CRM;
+	}
+
+	public String getGenero() {
+		return genero;
+	}
+	@Override
+	public void atualizar(String endereco, String telefone, String email) {
+		
+	}
+ 
 }
+

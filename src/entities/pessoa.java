@@ -1,9 +1,5 @@
 package entities;
 
-import Exception.CpfInvalidoException;
-import Exception.NomeInvalidoException;
-import Exception.TelefoneInvalidoException;
-
 public abstract class pessoa implements Cadastro {
     protected String nome;
     protected String endereco;
@@ -21,33 +17,16 @@ public abstract class pessoa implements Cadastro {
         this.cidade = cidade;
         this.email = email;
         this.genero = genero;
-
-        try {
-            setNome(nome);
-            setCpf(cpf);
-            setTelefone(telefone);
-        } catch (NomeInvalidoException | CpfInvalidoException | TelefoneInvalidoException e) {
-            // Lidar com as exceções, se necessário
-            System.err.println("Erro ao criar pessoa: " + e.getMessage());
-        }
+        this.nome = nome;
+        this.cpf = cpf;
+        this.telefone = telefone;
+       
     }   
     
 
 
-
-    // Implementação padrão do método excluir
-//    @Override
-//    public void excluir() {
-//        this.ativo = false;
-//        System.out.println("Cliente excluído: " + nome);
-//    }
-
-    // Implementação padrão do método atualizar
-
-    public void setNome(String nome) throws NomeInvalidoException {
-        if (nome == null || nome.isEmpty() || nome.matches(".*\\d+.*")) {
-            throw new NomeInvalidoException("Nome inválido: não pode ser nulo, vazio ou conter números.");
-        }
+    public void setNome(String nome){
+        
         this.nome = nome;
     }
 
@@ -64,17 +43,13 @@ public abstract class pessoa implements Cadastro {
 	}
 
 
-	public void setTelefone(String telefone) throws TelefoneInvalidoException {
-	    if (telefone == null || telefone.length() < 10 || telefone.length() > 11 || !telefone.matches("\\d+")) {
-	        throw new TelefoneInvalidoException("Telefone inválido: deve ter entre 10 e 11 números.");
-	    }
+	public void setTelefone(String telefone) {
+	    
 	    this.telefone = telefone;
 	}
 
-	public void setCpf(String cpf) throws CpfInvalidoException {
-	    if (cpf == null || cpf.length() != 11 || !cpf.matches("\\d+")) {
-	        throw new CpfInvalidoException("CPF inválido: deve ter exatamente 11 números.");
-	    }
+	public void setCpf(String cpf){
+	   
 	    this.cpf = cpf;
 	}
 
@@ -96,15 +71,65 @@ public abstract class pessoa implements Cadastro {
 
 
 
-	public void atualizar(String endereco, String telefone, String email) {
-    	this.endereco = endereco;
-        this.telefone = telefone;
-        this.email = email;
+	public void atualizar(String nome, String cidade,String endereco, String telefone) {
+		this.setNome(nome);
+    	this.setCidade(cidade);
+    	this.setEndereco(endereco);
+    	this.setTelefone(telefone);
         
     }
 
    
     
+	public String getNome() {
+		return nome;
+	}
+
+
+
+
+	public String getEndereco() {
+		return endereco;
+	}
+
+
+
+
+	public String getCpf() {
+		return cpf;
+	}
+
+
+
+
+	public String getCidade() {
+		return cidade;
+	}
+
+
+
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+
+
+
+	public String getEmail() {
+		return email;
+	}
+
+
+
+
+	public String getGenero() {
+		return genero;
+	}
+
+
+
+
 	@Override
 	public String toString() {
 		return  nome;

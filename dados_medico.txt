@@ -1,2 +1,4 @@
-Andre Palharini;04626388043;Santiago;Rua floriano Peixoto;55999901020;warder63@gmail.com;warder63@gmail.com;Masculino
-Joao Paulo;12388899910;Santa Maria;Rua Floriano Peixoto;55999901929;gamer@silbal.com;gamer@silbal.com;Masculino
+Andre Palharini;04626388043;Rua floriano Peixoto;Santiago;55999901020;warder63@gmail.com;warder63@gmail.com;Masculino
+Abraao;12388299910;Rua Floriano Peixoto;Santa Maria;55999901229;gamer@silbal.com;gamer@silbal.com;Masculino
+Joaquim;12123899910;Rua Floriano Peixoto;Santa Maria;55999123929;gamer@silbal.com;gamer@silbal.com;Masculino
+Salles;12929102091;Rua 3;Santa maria;55999901020;whahsw@gmail.com;whahsw@gmail.com;Não informar

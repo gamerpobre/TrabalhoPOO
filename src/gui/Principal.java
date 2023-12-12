@@ -58,12 +58,14 @@ public class Principal extends JFrame {
             // Cria e exibe a janela da classe cadastroPaciente
         	GerenciarAgendas janelaAgenda = new GerenciarAgendas();
         	janelaAgenda.setVisible(true);
+        	dispose();
         });
         // Adiciona um ActionListener ao botão "Cadastrar Usuario"
         btnUsuarios.addActionListener(e -> {
             // Cria e exibe a janela da classe cadastroPaciente
         	gerenciarUsuarios janelaGerenciar = new gerenciarUsuarios();
         	janelaGerenciar.setVisible(true);
+        	dispose();
         });
 	}
 }

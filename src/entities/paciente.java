@@ -15,19 +15,18 @@ public class paciente extends pessoa {
     	super(nome, cpf, endereco, cidade, telefone, email, genero);
         this.convenio = convenio; 
         if (cpfJaExiste(cpf)) {
-              System.out.println("Usuário já existe.");
              
           }
     	else {
     	
         // Adiciona o paciente à lista de pacientes
         listaPacientes.add(this);
-        System.out.println(listaPacientes);
     	}
     }
     
     public void adicionarPacienteNaLista(paciente paciente) {
         listaPacientes.add(paciente);
+        
     }
 
     
@@ -41,22 +40,22 @@ public class paciente extends pessoa {
         return false; // CPF não existe
     }
 
-
-    public void atualizar(String endereco, String telefone, String email) {
-        super.atualizar(endereco, telefone, email);
-        System.out.println("Paciente atualizado: " + nome);
-    }
-
+	
+ 
     public boolean isAtivo() {
         return super.ativo;
     }
 
     // Método para salvar dados em um arquivo
-   
-    public String getCpf() {
-    	return cpf;
+    public void atualizar(String nome, String cidade,String endereco, String telefone) {
+		this.setNome(nome);
+    	this.setCidade(cidade);
+    	this.setEndereco(endereco);
+    	this.setTelefone(telefone);
     	
     }
+    
+    
     public static ArrayList<paciente> carregarDadosPaciente() {
         ArrayList<paciente> pacientes = new ArrayList<>();
 
@@ -85,7 +84,60 @@ public class paciente extends pessoa {
         return super.toString();
     }
    
-   
+    public String getNome() {
+		return nome;
+	}
+
+
+
+
+	public String getEndereco() {
+		return endereco;
+	}
+
+
+
+
+	public String getCpf() {
+		return cpf;
+	}
+
+
+
+
+	public String getCidade() {
+		return cidade;
+	}
+
+
+
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+
+
+
+	public String getEmail() {
+		return email;
+	}
+
+
+	public String getConvenio() {
+		return convenio;
+	}
+
+	public String getGenero() {
+		return genero;
+	}
+
+	@Override
+	public void atualizar(String endereco, String telefone, String email) {
+		
+	}
+
+	
  
 }
 

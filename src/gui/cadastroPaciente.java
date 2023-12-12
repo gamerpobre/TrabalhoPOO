@@ -148,12 +148,11 @@ public class cadastroPaciente extends JFrame {
 		contentPane.add(lblGnero);
 		   btnCancelar.addActionListener(new ActionListener() {
 	            public void actionPerformed(ActionEvent e) {
-	                // Hide the current frame (cadastroPaciente)
-	                setVisible(false);
+	                
 
-	                // Show the main frame
-	                Principal.main(null);
-	                dispose();
+	                gerenciarUsuarios janelagerenciar = new gerenciarUsuarios();
+	                janelagerenciar.setVisible(true);
+	            	dispose();
 	            }
 	        });
 	
@@ -162,10 +161,9 @@ public class cadastroPaciente extends JFrame {
             public void actionPerformed(ActionEvent e) {
             	cadastrarPaciente();
             	
-            	  setVisible(false);
-
-	                // Show the main frame
-            	  Principal.main(null);
+            	gerenciarUsuarios janelagerenciar = new gerenciarUsuarios();
+                janelagerenciar.setVisible(true);
+            	dispose();
             	  
             }
 	
